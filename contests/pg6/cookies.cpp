@@ -100,7 +100,6 @@ vector<string> split(const string &str) {
 
         start = end + 1;
     }
-
     tokens.push_back(str.substr(start));
 
     return tokens;
