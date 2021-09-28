@@ -2,18 +2,10 @@
 using namespace std;
 class Solution {
 public:
-    bool comparefn(vector<int>a,vector<int> b)
-{
-    if(a[0]<b[0] ||(a[0]==b[0]&&a[1]<b[1]))
-    {
-        return true;
-    }
-    return false;
-}
     vector<vector<int>> merge(vector<vector<int>>& intervals) {
         int i=0,j=0;
         vector<vector<int>>sol;
-        sort(intervals.begin(),intervals.end(),comparefn);
+        sort(intervals.begin(),intervals.end());
         while(i<intervals.size())
         {
             int first=intervals[i][0];
