@@ -1,5 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
+/**
+ * @brief 
+ * 
+ */
 class trie_node
 {
     public:
@@ -69,7 +73,7 @@ trie_node* delete_key(trie_node *current,string key,int i)
         return current;//if not then just set is_end false and return same node
     }
     int index=key[i]-'a';
-    current->child[i]=delete_key(current->child[i],key,i+1);//recursively traverse the string
+    current->child[index]=delete_key(current->child[index],key,i+1);//recursively traverse the string
     if(is_node_empty(current) && current->is_end==false)
     {
         delete(current);
@@ -102,6 +106,7 @@ int main()
             cin>>key;
             cout<<search_key(key)<<endl;
             case 4:
+            exit(0);
             break;
             default:
             break;

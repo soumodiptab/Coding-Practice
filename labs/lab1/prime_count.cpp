@@ -7,9 +7,12 @@
  * 
  * @copyright Copyright (c) 2021
  *  The idea is to create a boolean array of size n+1
+ *  Input format: first line contains test cases 
+ *  next line contain lower and upper limit to find no. of primes
+ * 
  */
 #include <bits/stdc++.h>
-#define MAX 1e9 + 7
+#define MAX 1e7
 #define long long long int
 using namespace std;
 
@@ -36,7 +39,16 @@ void sieve_init(long n)
 }
 int main()
 {
-    int val = MAX;
-    cout << val;
+    sieve_init(MAX);
+    long lower, upper;
+    int testcases;
+    cin >> testcases;
+    while (testcases--)
+    {
+        cin >> lower >> upper;
+        auto lower_iterator = lower_bound(prime.begin(), prime.end(), lower + 1);
+        auto upper_iterator = upper_bound(prime.begin(), prime.end(), upper - 1);
+        cout << upper_iterator - lower_iterator << endl;
+    }
     return 0;
 }

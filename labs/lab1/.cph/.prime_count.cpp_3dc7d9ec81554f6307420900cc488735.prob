@@ -1,0 +1,1 @@
+{"name":"Local: prime_count","url":"/home/soumodiptab/repo/Coding-Practice/labs/lab1/prime_count.cpp","tests":[{"id":1638285232557,"input":"5\n1 10\n2 10\n4 6\n3 5\n100 102","output":"4\n3\n1\n0\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/soumodiptab/repo/Coding-Practice/labs/lab1/prime_count.cpp","group":"local","local":true}
