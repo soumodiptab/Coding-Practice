@@ -79,7 +79,7 @@ int main()
             cin>>arr[i];
         
         Solution obj;
-        vector <long long> res = obj.NGR(arr, n);
+        vector <long long> res = obj.NGL(arr, n);
         for (long long i : res) cout << i << " ";
         cout<<endl;
     }

@@ -10,4 +10,6 @@ int main()
     x.erase(1,1);
     cout<<x<<'\n';
     return 0;
+    priority_queue<int>q;
+    q.push(10);
 }
